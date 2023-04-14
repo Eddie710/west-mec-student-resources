@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      // Load the Visualization API and the corechart package.
+      google.charts.load('current', { packages: ['corechart'] });
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.charts.setOnLoadCallback(drawChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+        // Define the data table
+        var data = google.visualization.DataTable(DataTable.json);
+
+        // Define chart options
+        // var options = {
+        //   title: 'Sales and Expenses by Year',
+        //   width: 600,
+        //   height: 400,
+        //   legend: { position: 'top' },
+        //   hAxis: { baselineColor: 'red', textStyle: { color: 'blue' }, title: 'Year', format: '####' },
+        //   vAxis: { title: 'Amount' },
+        //   colors: ['black', 'green'],
+        //   backgroundColor: 'white'
+        // };
+
+        // Create the chart and draw it onto the page
+        var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+
+  <body>
+    <!--Div that will hold the pie chart-->
+    <div id="chart_div"></div>
+  </body>
+</html>

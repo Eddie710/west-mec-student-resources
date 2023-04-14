@@ -1,0 +1,17 @@
+[
+  {
+    "property1": "Phoenix",
+    "property2": "Temperature",
+    "property3": 100
+  },
+  {
+    "property1": "Minneapolis",
+    "property2": "Temperature",
+    "property3": 44
+  },
+  {
+    "property1": "Anchorage",
+    "property2": "Temperature",
+    "property3": 25
+  }
+]
