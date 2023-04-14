@@ -1,5 +1,7 @@
 # Big O Notation
 
+[Big O Sorting Algorithm Article](https://builtin.com/machine-learning/fastest-sorting-algorithm)
+
 ![Big O graph](./images/bigOgraphs.png)
 
 ## types of big O
