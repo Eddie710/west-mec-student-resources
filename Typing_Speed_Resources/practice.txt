@@ -1,0 +1,121 @@
+print("# Round", round_number, "#")
+        for i in range(num_players):
+            input("$ Player " + str(i+1) + ", press Enter to roll the dice... #")
+            roll = random.randint(1, 6)
+            print("$ Player " + str(i+1) + " rolled a", roll, "!")
+            player_scores[i] += roll
+            print("# Player " + str(i+1) + " score:", player_scores[i], "$")
+        round_number += 1
+
+def evaluate_expression(expression):
+    stack = []
+    for char in expression:
+        if char == '@':
+            op2 = stack.pop()
+            result = op1 @ op2
+            stack.append(result)
+        elif char == '^':
+            op2 = stack.pop()
+            result = op1 ^ op2
+            stack.append(result)
+        else:
+            stack.append(int(char))
+    return stack.pop()
+
+expression = "3@4^2@5^6"
+result = evaluate_expression(expression)
+print("Result of expression", expression, "is", result, "!")
+
+Java binary search algorithm - 
+public static int binarySearch(int[] arr, int target) {
+    int left = 0, right = arr.length - 1;
+    while (left <= right) {
+        int mid = left + (right - left) / 2;
+        if (arr[mid] == target) {
+            return mid;
+        } else if (arr[mid] < target) {
+            left = mid + 1;
+        } else {
+            right = mid - 1;
+        }
+    }
+    return -1;
+}
+
+C# Bubble Sort Algorithm - 
+static void bubbleSort(int[] arr) {
+    int n = arr.Length;
+    for (int i = 0; i < n - 1; i++) {
+        for (int j = 0; j < n - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+}
+
+JavaScript - Fibonacci Series
+function fibonacci(num) {
+    if (num <= 1) {
+        return 1;
+    }
+    return fibonacci(num - 1) + fibonacci(num - 2);
+}
+
+Python - Linear Search Algorithm
+def linearSearch(arr, target):
+    for i in range(len(arr)):
+        if arr[i] == target:
+            return i
+    return -1
+
+Perl - 1. Printing the Contents of a File
+
+#!/usr/bin/perl
+
+open my $file, '<', 'example.txt' or die "Cannot open file: $!";
+
+while (my $line = <$file>) {
+    print $line;
+}
+
+close $file;
+
+Parsing a CSV File
+#!/usr/bin/perl
+
+my $file = 'example.csv';
+my $csv = Text::CSV->new({ binary => 1 }) or die "Cannot use CSV: " . Text::CSV->error_diag();
+open my $fh, "<:encoding(utf8)", $file or die "Cannot open file: $!";
+while (my $row = $csv->getline($fh)) {
+    foreach my $field (@$row) {
+        print "$field\t";
+    }
+    print "\n";
+}
+$csv->eof or $csv->error_diag();
+close $fh;
+
+%+r5$s6^hU#@&*pRqo_!xv+8VfW1@3a2L9^Tg$-m#ySbI)kQ[>z?4<XNcJ]tD{/}=E7e;wiGZ.
+&Z6K!Tm8Xr<1a2?b#yLk+H^G/{o)eUwvY[7pIjxN*f9V~WtDdq]g$%s@lC_S-A0^3B>uJ4i=5;EhRz.
+$script!quest ($array.)left[Extra.method] #caption-_*
+#caption-_*[Extra.method] ($array.)left!quest$script
+($array.)right#script!quest [Extra.method] #caption-_*
+!quest[Extra.method]#caption-_*(($array.)left)$script
+#caption-_*($array.)left[Extra.method]$script!quest
+($array.)right#caption-_*!quest[Extra.method]$script
+[Extra.method] #caption-_*!quest($array.)left$script
+!quest($array.)left[Extra.method]#caption-_* $script
+#caption-_*($array.)left!quest[Extra.method]$script
+($array.)right$script[Extra.method]#caption-_* !quest
+#caption-_*!quest[Extra.method] ($array.)left$script
+[Extra.method]!quest#caption-_* ($array.)left$script
+($array.)right!quest[Extra.method] #caption-_* $script
+#caption-_*($array.)left$script[Extra.method]!quest
+[Extra.method]$script#caption-_* ($array.)left!quest
+!quest($array.)left$script[Extra.method] #caption-_*
+#caption-_*[Extra.method]!quest($array.)left$script
+($array.)right$script!quest#caption-_* [Extra.method]
+Extra.methodleft#caption-_*!quest$script
