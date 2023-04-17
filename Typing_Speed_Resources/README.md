@@ -3,6 +3,7 @@
 ## Links
 
 [MonkeyType](https://monkeytype.com/)
+
 [Coding Speed Test](https://codingspeedtest.com/)
 
 ## Practice Text All Languages
